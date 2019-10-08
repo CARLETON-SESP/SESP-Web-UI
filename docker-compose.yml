@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  web-api:
+    container_name: sesp-api
+    image: sesp:web-api
+    volumes: 
+      - ./sesp-Web-App-Api:/usr/src/app
+    ports:
+      - 8081:8081
+  website:
+    container_name: sesp-ui
+    image: sesp-web-ui:SESP-Web-UI
+    volumes: 
+      - ./SESP-Web-Ui:/app
+    ports:
+      - 3000:3000
+      - 35729:35729
