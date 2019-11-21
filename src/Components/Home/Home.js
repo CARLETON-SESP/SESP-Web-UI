@@ -43,7 +43,7 @@ class Home extends React.Component {
                         </nav> 
                         <div className="tc-l mt4 mt5-m mt6-l ph3">
                                 <h1 className="f1 f-headline-l fw1 i white-60">Sustainable Energy System Portfolio</h1>
-                                <h2 className="fw1 f3 white-80 mt3 mb4">Tabletop Raspberry Pi Simulator</h2>
+                                <h2 className="fw1 f3 white-80 mt3 mb4">Tabletop Raspberry Pi Simulator!!</h2>
                                 <a className="f6 no-underline grow dib v-mid bg-blue white ba b--blue ph3 pv2 mb3" href="/">Current Energy Levels</a>
                                     <span className="dib v-mid ph3 white-70 mb3">or</span>
                                 <a className="f6 no-underline grow dib v-mid white ba b--white ph3 pv2 mb3" href="/">Forecasted Energy Levels</a>
