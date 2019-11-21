@@ -7,7 +7,7 @@ https://www.peterbe.com/plog/how-to-create-react-app-with-docker
 
 ## Docker 
 
-docker image build -t sesp-web-ui:SESP-Web-UI.
+docker image build -t sesp-web-ui:SESP-Web-UI .
 
 docker container run -it react:app bash
 
