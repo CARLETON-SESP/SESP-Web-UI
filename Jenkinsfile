@@ -14,7 +14,7 @@ pipeline {
             }
         }
 
-        stage('build docker image') {
+        stage('Build & Push Docker Image') {
             when {
                 branch "jake_jenkins"
             }
@@ -22,23 +22,11 @@ pipeline {
                withCredentials([file(credentialsId: 'josh-vm', variable: 'PEM_KEY')]) {
                     sh ''' 
                         chmod 400 ${PEM_KEY}
-                        ssh -o StrictHostKeyChecking=no -i "${PEM_KEY}" ubuntu@ec2-34-230-39-178.compute-1.amazonaws.com 'bash -s' < ./docker_build.sh
+                        ssh -o StrictHostKeyChecking=no -i "${PEM_KEY}" ubuntu@ec2-34-230-39-178.compute-1.amazonaws.com 'bash -s' < ./docker_build.sh '${DOCKER_ID_USR}' '${DOCKER_ID_PSW}'
                     '''
                 }    
             }
         }
 
-        // stage('push docker hub') {
-        
-        //     when {
-        //         branch "master"
-        //     }
-        //     steps { 
-        //         sh '''
-        //             docker login -u ${DOCKER_ID_USR} -p ${DOCKER_ID_PSW}
-        //             docker  push sespsyscon/front.end:sesp-web-ui
-        //        '''
-        //     }
-        // }
     }
 }

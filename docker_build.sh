@@ -1,4 +1,6 @@
 #!/bin/bash
+DOCKER_ID_USR=$1
+DOCKER_ID_PSW=$2
 
 echo "script worked"
 if [ -d "SESP-Web-UI" ]; then
@@ -12,3 +14,6 @@ else
 fi
 
 sudo docker image build -t sespsyscon/sesp-web-ui . 
+
+sudo docker login -u $DOCKER_ID_USR -p $DOCKER_ID_PSW
+sudo docker push sespsyscon/front.end:sesp-web-ui
