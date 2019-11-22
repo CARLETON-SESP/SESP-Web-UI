@@ -11,4 +11,4 @@ else
     cd SESP-Web-UI
 fi
 
-# sudo docker image build -t sespsyscon/sesp-web-ui . 
+sudo docker image build -t sespsyscon/sesp-web-ui . 
