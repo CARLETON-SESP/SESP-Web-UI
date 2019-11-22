@@ -21,13 +21,12 @@ pipeline {
             steps {
                 withCredentials(bindings: [sshUserPrivateKey(credentialsId: 'josh-vm', keyFileVariable: 'PEM_KEY')]) {
 
-                    sh
-                    ''' 
-                        chmod 400 ${PEM_KEY}
-                        ssh -i "${PEM_KEY}" ubuntu@ec2-54-82-2-158.compute-1.amazonaws.com 'bash -s' < ./docker_build.sh
-                        
+                    sh ''' 
+                       ls 
                     '''
-
+                        // chmod 400 ${PEM_KEY}
+                        // ssh -i "${PEM_KEY}" ubuntu@ec2-54-82-2-158.compute-1.amazonaws.com 'bash -s' < ./docker_build.sh
+                       
                 }
     
             }
