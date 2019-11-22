@@ -8,7 +8,7 @@ pipeline {
 
     stages {
 
-        stage('automated testing') {
+        stage('Automated Testing') {
             steps {
                 sh 'echo call script for selenium testing here...'
             }
