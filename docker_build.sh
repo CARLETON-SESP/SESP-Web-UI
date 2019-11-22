@@ -16,4 +16,4 @@ fi
 sudo docker image build -t sespsyscon/sesp-web-ui . 
 
 sudo docker login -u $DOCKER_ID_USR -p $DOCKER_ID_PSW
-sudo docker push sespsyscon/front.end:sesp-web-ui
+sudo docker push sespsyscon/sesp-web-ui
