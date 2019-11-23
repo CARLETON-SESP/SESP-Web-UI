@@ -27,7 +27,7 @@ for (var i = 1; i <= 23; i++) {
     }
 }
 
-var dayValueArr = [0, 1, 1.3, 1.8, 2.6, 3.1, 3.9, 4.3, 4.8, 5.6, 5.9, 6.2, 7.3, 7.8, 8.3, 8.7, 9.2, 9.8, 10.6, 11.8, 12.3, 13.9, 14.4, 15.1];
+var dayValueArr = [5.2, 5.2, 5.2, 5.2, 5.2, 5.2, 6.5, 7.8, 9.1, 10.3, 10.3, 10.3, 10.3, 9.1, 9.1, 10.3, 10.3, 11.6, 13, 13, 10.3, 9.1, 6.5, 5.2];
 
 var activeArr = [];
 // eslint-disable-next-line
@@ -196,7 +196,7 @@ var monthLen = moment().daysInMonth();
 // eslint-disable-next-line
 var currentDay = moment().format('D');
 
-var monthValueArr = [15.1, 32.4, 45.2, 82.3, 91.5, 111.4, 120.16, 130.26, 137.7, 142, 149.3, 155.8, 164.1, 178.4, 198.7, 214, 228.8, 245.1, 259, 270.5, 287, 300, 315.9, 332.4, 347.2, 360.7, 377.2, 394.1, 427.1, 439, 460];
+var monthValueArr = dayValueArr * 30;
 
 var monthCatArr = [];
 // eslint-disable-next-line
@@ -387,7 +387,7 @@ var yearLen = 12;
 // eslint-disable-next-line
 var currentMonth = parseInt(moment().format('M')) - 1;
 
-var yearValueArr = [420, 810, 1270, 1726, 2176, 2624, 3063, 3553, 4026, 4488, 4943, 5383];
+var yearValueArr = monthValueArr *12;
 
 var yearCatArr = [];
 // eslint-disable-next-line
