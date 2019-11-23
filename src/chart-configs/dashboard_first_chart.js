@@ -66,11 +66,17 @@ var first_chart_today = {
     // },
 
     "data": [{
-      "label": "Electricity",
-      "value": "3.9"
+      "label": "Nuclear",
+      "value": "8"
     }, {
-      "label": "Gas",
-      "value": "2.3"
+      "label": "Solar",
+      "value": "1"
+    }, {
+      "label": "Wind",
+      "value": "1"
+    }, {
+      "label": "Diseal",
+      "value": "3"
     }]
   };
 
