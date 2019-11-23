@@ -65,34 +65,24 @@ var fourth_chart_month = {
 
   data: [
     {
-      label: "Heating & AC",
-      value: "1.4",
-      toolText: "$Label: 31.8%"
+      label: "Nuclear",
+      value: "6",
+      toolText: "Energy: 54.5%"
     },
     {
-      label: "EV Charge",
-      value: "0.9",
-      toolText: "$Label: 20.4%"
+      label: "Wind",
+      value: "1",
+      toolText: "Energy: 9.1%"
     },
     {
-      label: "Plug Loads",
-      value: "0.8",
-      toolText: "$Label: 18.1%"
+      label: "Solar",
+      value: "1",
+      toolText: "$Label: 9.1%"
     },
     {
-      label: "Refrigeration",
-      value: "0.7",
-      toolText: "$Label: 15.9%"
-    },
-    {
-      label: "Lighting",
-      value: "0.4",
-      toolText: "$Label: 9%"
-    },
-    {
-      label: "Others",
-      value: "0.2",
-      toolText: "$Label: 4.5%"
+      label: "Diseal",
+      value: "3",
+      toolText: "$Label: 27.3%"
     }
   ]
 };

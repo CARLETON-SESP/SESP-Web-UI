@@ -46,7 +46,7 @@ var second_chart_today = {
                 "color": "#B4F9A1",
                 "fontSize": "30",
                 "x": "$canvasEndX + 100",
-                "y": "$canvasheight/2 - 80"
+                "y": "$canvasheight/2 - 1000"
             }, {
                 "id": "indicator",
                 "type": "text",
@@ -62,7 +62,7 @@ var second_chart_today = {
     "data": [{
         "label": previousDay,
         "value": "13",
-        "alpha": "0"
+        "alpha": "13"
     }, {
         "label": currentDay,
         "value": "13"
@@ -135,7 +135,7 @@ var second_chart_month = {
     "data": [{
         "label": previousMonth,
         "value": "390",
-        "alpha": "0"
+        "alpha": "390"
     }, {
         "label": currentMonth,
         "value": "390"
@@ -208,7 +208,7 @@ var second_chart_year = {
     "data": [{
         "label": previousYear,
         "value": "4680",
-        "alpha": "0"
+        "alpha": "4680"
     }, {
         "label": currentYear,
         "value": "4680"
