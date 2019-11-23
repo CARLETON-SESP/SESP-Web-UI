@@ -110,13 +110,13 @@ class App extends React.Component {
                             <div className="row mt-3 db-chart">
                                 <div id="parent1" className="col-lg-6 col-xl-4">
                                     <div className="chart-card mb-4">
-                                        <div className="chart-title" id="text1">COST</div>
+                                        <div className="chart-title" id="text1">Energy Produced</div>
                                         <div id="chart1" className="chart">Rendering chart 1 here</div>
                                     </div>
                                 </div>
                                 <div id="parent2" className="col-lg-6 col-xl-4">
                                     <div className="chart-card mb-4">
-                                        <div className="chart-title" id="text2">CHANGE IN COST</div>
+                                        <div className="chart-title" id="text2">Energy produced per hour</div>
                                         <div id="chart2" className="chart">Chart 2</div>
                                     </div>
                                 </div>
@@ -128,7 +128,7 @@ class App extends React.Component {
                                 </div>
                                 <div id="parent4" className="col-lg-6 col-xl-4">
                                     <div className="chart-card mb-4">
-                                        <div className="chart-title" id="text4">ACTIVE APPLIANCES</div>
+                                        <div className="chart-title" id="text4">ACTIVE Energy Sources</div>
                                         <div id="chart4" className="chart">Chart 4</div>
                                     </div>
                                 </div>
