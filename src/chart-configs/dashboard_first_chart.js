@@ -9,7 +9,7 @@ var first_chart_today = {
       "use3DLighting": "0",
       "showLabels": "0",
       "showValues": "0",
-      "paletteColors": "#58E2C2, #F7E53B",
+      "paletteColors": " #F7E53B",
       "bgColor": "#1D1B41",
       "bgAlpha": "0",
       "canvasBgAlpha": "0",
@@ -38,7 +38,7 @@ var first_chart_today = {
       "canvasBottomMargin": "20",
       "legendNumColumns": "1",
       "legendPosition": "RIGHT",
-      "defaultCenterLabel": "Total <br> $6.2",
+      "defaultCenterLabel": "Total <br> 11",
       "centerLabel": "$label<br>$value",
       "centerLabelBold": "1",
       "centerLabelFontSize": "20",
@@ -67,7 +67,7 @@ var first_chart_today = {
 
     "data": [{
       "label": "Nuclear",
-      "value": "8"
+      "value": "6"
     }, {
       "label": "Solar",
       "value": "1"
