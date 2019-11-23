@@ -9,7 +9,7 @@ var first_chart_today = {
       "use3DLighting": "0",
       "showLabels": "0",
       "showValues": "0",
-      "paletteColors": " #F7E53B",
+      "paletteColors": "#58E2C2, #F7E53B, #FF5733, #FF33DA, #42FF33 ",
       "bgColor": "#1D1B41",
       "bgAlpha": "0",
       "canvasBgAlpha": "0",
@@ -38,7 +38,7 @@ var first_chart_today = {
       "canvasBottomMargin": "20",
       "legendNumColumns": "1",
       "legendPosition": "RIGHT",
-      "defaultCenterLabel": "Total <br> 11",
+      "defaultCenterLabel": "Total <br> 264",
       "centerLabel": "$label<br>$value",
       "centerLabelBold": "1",
       "centerLabelFontSize": "20",
@@ -67,16 +67,16 @@ var first_chart_today = {
 
     "data": [{
       "label": "Nuclear",
-      "value": "6"
+      "value": "144"
     }, {
       "label": "Solar",
-      "value": "1"
+      "value": "24"
     }, {
       "label": "Wind",
-      "value": "1"
+      "value": "24"
     }, {
       "label": "Diseal",
-      "value": "3"
+      "value": "72"
     }]
   };
 
@@ -89,7 +89,7 @@ var first_chart_month = {
     use3DLighting: "0",
     showLabels: "0",
     showValues: "0",
-    paletteColors: "#58E2C2, #F7E53B",
+    paletteColors: "#58E2C2, #F7E53B, #FF5733, #FF33DA, #42FF33 ",
     bgColor: "#1D1B41",
     bgAlpha: "0",
     canvasBgAlpha: "0",
@@ -118,7 +118,7 @@ var first_chart_month = {
     canvasBottomMargin: "20",
     legendNumColumns: "1",
     legendPosition: "RIGHT",
-    defaultCenterLabel: "Total <br> $214",
+    defaultCenterLabel: "Total <br> 8460",
     centerLabel: "$label<br>$value",
     centerLabelBold: "1",
     centerLabelFontSize: "20",
@@ -147,16 +147,16 @@ var first_chart_month = {
 
   "data": [{
     "label": "Nuclear",
-    "value": "8"
+    "value": "4320"
   }, {
     "label": "Solar",
-    "value": "1"
+    "value": "720"
   }, {
     "label": "Wind",
-    "value": "1"
+    "value": "720"
   }, {
     "label": "Diseal",
-    "value": "3"
+    "value": "2700"
   }]
 };
 
@@ -169,7 +169,7 @@ var first_chart_year = {
     use3DLighting: "0",
     showLabels: "0",
     showValues: "0",
-    paletteColors: "#58E2C2, #F7E53B",
+    paletteColors: "#58E2C2, #F7E53B, #FF5733, #FF33DA, #42FF33 ",
     bgColor: "#1D1B41",
     bgAlpha: "0",
     canvasBgAlpha: "0",
@@ -227,16 +227,16 @@ var first_chart_year = {
 
   "data": [{
     "label": "Nuclear",
-    "value": "8"
+    "value": "51840"
   }, {
     "label": "Solar",
-    "value": "1"
+    "value": "8640"
   }, {
     "label": "Wind",
-    "value": "1"
+    "value": "8640"
   }, {
     "label": "Diseal",
-    "value": "3"
+    "value": "32400"
   }]
 };
 
