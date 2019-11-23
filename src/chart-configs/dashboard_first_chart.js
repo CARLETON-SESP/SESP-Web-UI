@@ -145,16 +145,19 @@ var first_chart_month = {
   //   }]
   // },
 
-  data: [
-    {
-      label: "Electricity",
-      value: "139"
-    },
-    {
-      label: "Gas",
-      value: "75"
-    }
-  ]
+  "data": [{
+    "label": "Nuclear",
+    "value": "8"
+  }, {
+    "label": "Solar",
+    "value": "1"
+  }, {
+    "label": "Wind",
+    "value": "1"
+  }, {
+    "label": "Diseal",
+    "value": "3"
+  }]
 };
 
   //var yearVal = moment().format('YYYY');
@@ -222,16 +225,19 @@ var first_chart_year = {
   //   }]
   // },
 
-  data: [
-    {
-      label: "Electricity",
-      value: "1600"
-    },
-    {
-      label: "Gas",
-      value: "850"
-    }
-  ]
+  "data": [{
+    "label": "Nuclear",
+    "value": "8"
+  }, {
+    "label": "Solar",
+    "value": "1"
+  }, {
+    "label": "Wind",
+    "value": "1"
+  }, {
+    "label": "Diseal",
+    "value": "3"
+  }]
 };
 
 
