@@ -196,7 +196,7 @@ var monthLen = moment().daysInMonth();
 // eslint-disable-next-line
 var currentDay = moment().format('D');
 
-var monthValueArr = dayValueArr * 30;
+var monthValueArr = [5.2*30, 5.2*30, 5.2*30, 5.2*30, 5.2*30, 5.2*30, 6.5*30, 7.8*30, 9.1*30, 10.3*30, 10.3*30, 10.3*30, 10.3*30, 9.1*30, 9.1*30, 10.3*30, 10.3*30, 11.6*30, 13*30, 13*30, 10.3*30, 9.1*30, 6.5*30, 5.2*30];
 
 var monthCatArr = [];
 // eslint-disable-next-line
@@ -387,7 +387,7 @@ var yearLen = 12;
 // eslint-disable-next-line
 var currentMonth = parseInt(moment().format('M')) - 1;
 
-var yearValueArr = monthValueArr *12;
+var yearValueArr = [5.2*30*12, 5.2*30, 5.2*30, 5.2*30, 5.2*30, 5.2*30, 6.5*30, 7.8*30, 9.1*30, 10.3*30, 10.3*30, 10.3*30, 10.3*30, 9.1*30, 9.1*30, 10.3*30, 10.3*30, 11.6*30, 13*30, 13*30, 10.3*30, 9.1*30, 6.5*30, 5.2*30];;
 
 var yearCatArr = [];
 // eslint-disable-next-line
