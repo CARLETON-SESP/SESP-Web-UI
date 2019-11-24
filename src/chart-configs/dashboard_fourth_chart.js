@@ -1,4 +1,12 @@
+let url = `http://ec2-34-230-39-178.compute-1.amazonaws.com:8080/`
+request(url, function (err, response, body) {
+    if(err){
+      console.log('error:', error);
+    } else {
+      let weather = JSON.parse(body)
+    }
 
+  });
 var fourth_chart_month = {
   chart: {
     showBorder: "0",
