@@ -7,6 +7,7 @@ import registerServiceWorker from './registerServiceWorker';
 import { createStore } from 'redux';
 import allred from './reducer/all-reducers';
 import App from './components/app';
+import test_server from '../test_server'
 
 const store = createStore(allred);
 
