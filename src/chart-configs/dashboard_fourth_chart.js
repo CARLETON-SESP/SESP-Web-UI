@@ -6,7 +6,7 @@ request(url, function (err, response, body) {
     } else {
       let weather = JSON.parse(body)
     }
-
+  });
   
 var fourth_chart_month = {
   chart: {
@@ -112,4 +112,4 @@ export default chartConfigs4;
 export { fourth_chart_today };
 export { fourth_chart_month };
 export { fourth_chart_year };
-});
+
