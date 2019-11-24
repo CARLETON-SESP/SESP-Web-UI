@@ -1,7 +1,7 @@
-var weather ={};
+var weather1
 let request = require('request');
 let url = `http://ec2-34-230-39-178.compute-1.amazonaws.com:8080/`
-request(url, function (err, response, body) {
+weather1 = request(url, function (err, response, body) {
     if(err){
       console.log('error:');
     } else {
@@ -10,9 +10,10 @@ request(url, function (err, response, body) {
       return(weather)
     }
   });
-  console.log(weather);
-  console.log(weather.main);
-  console.log(weather.main.temp);
+
+  console.log(weather1);
+  console.log(weather1.main);
+  console.log(weather1.main.temp);
 var fourth_chart_month = {
   chart: {
     showBorder: "0",
@@ -78,7 +79,7 @@ var fourth_chart_month = {
   data: [
     {
       label: "Nuclear",
-      value: "{weather.main.temp}",
+      value: weather1.main.temp,
       toolText: "Energy: 54.5%"
     },
     {
