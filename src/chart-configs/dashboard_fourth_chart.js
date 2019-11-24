@@ -7,7 +7,7 @@ request(url, function (err, response, body) {
       let weather = JSON.parse(body)
     }
 
-  });
+  
 var fourth_chart_month = {
   chart: {
     showBorder: "0",
@@ -73,7 +73,7 @@ var fourth_chart_month = {
   data: [
     {
       label: "Nuclear",
-      value: '6',
+      value: weather.main.temp,
       toolText: "Energy: 54.5%"
     },
     {
@@ -107,7 +107,7 @@ var chartConfigs4 = {
     height: "300",
     dataSource: fourth_chart_month
 };
-
+});
 export default chartConfigs4;
 export { fourth_chart_today };
 export { fourth_chart_month };
