@@ -2,17 +2,15 @@ var weather1
 var weather
 let request = require('request');
 let url = `http://ec2-34-230-39-178.compute-1.amazonaws.com:8080/`
- request(url, function test(err, response, body) {
+ request(url, weather1 = function test(err, response, body) {
     if(err){
       console.log('error:');
     } else {
       weather = JSON.parse(body)
       console.log(weather);
-      
     }
     return(weather)
   });
-  weather1 = test(err, response, body);
   console.log(weather1);
   console.log(weather1.main);
   console.log(weather1.main.temp);
