@@ -16,7 +16,7 @@ request(url, function (err, response, body) {
       delete weather.sys;
       delete weather.coord;
       var json = JSON.stringify(weather)
-    }
+    
     app.get('/', (req, res) => res.send({json}))
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
   });
