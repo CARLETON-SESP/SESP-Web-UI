@@ -1,11 +1,12 @@
-function Get('http://ec2-34-230-39-178.compute-1.amazonaws.com:8080/'){
+const url = 'http://ec2-34-230-39-178.compute-1.amazonaws.com:8080/';
+function Get(url){
   var Httpreq = new XMLHttpRequest(); // a new request
-  Httpreq.open("GET",'http://ec2-34-230-39-178.compute-1.amazonaws.com:8080/',false);
+  Httpreq.open("GET",url,false);
   Httpreq.send(null);
   return Httpreq.responseText;          
 }
 
-var json_obj = JSON.parse(Get('http://ec2-34-230-39-178.compute-1.amazonaws.com:8080/'));
+var json_obj = JSON.parse(Get(url));
 var fourth_chart_month = {
   chart: {
     showBorder: "0",
