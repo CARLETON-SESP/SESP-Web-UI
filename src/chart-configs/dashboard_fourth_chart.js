@@ -49,7 +49,7 @@ var fourth_chart_month = {
           {
             id: "info",
             type: "text",
-            text: "Top 3 appliances<br>make up 70.3%<br>of the net usage.",
+            text: "",
             align: "right",
             color: "#FDFDFD",
             font: "Nunito Sans Light",
@@ -70,9 +70,9 @@ var fourth_chart_month = {
       toolText: "Energy: 54.5%"
     },
     {
-      label: "Wind",
-      value: "1",
-      toolText: "Energy: 9.1%"
+      label: "Diseal",
+      value: "3",
+      toolText: "Energy: 27.3%"
     },
     {
       label: "Solar",
@@ -80,9 +80,9 @@ var fourth_chart_month = {
       toolText: "$Label: 9.1%"
     },
     {
-      label: "Diseal",
-      value: "3",
-      toolText: "$Label: 27.3%"
+      label: "Wind",
+      value: "1",
+      toolText: "$Label: 9.1%"
     }
   ]
 };
