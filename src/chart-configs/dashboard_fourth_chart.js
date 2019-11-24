@@ -1,12 +1,9 @@
 const url = 'http://ec2-34-230-39-178.compute-1.amazonaws.com:8080/json';
-function Get(url){
-  var Httpreq = new XMLHttpRequest(); // a new request
-  Httpreq.open("GET",url,false);
-  Httpreq.send(null);
-  return Httpreq.responseText;          
-}
-
-var json_obj = JSON.parse(Get(url));
+fetch(url)
+    .then(res => res.json())
+    .then((out) => {
+        console.log('Output: ', out);
+}).catch(err => console.error(err));
 var fourth_chart_month = {
   chart: {
     showBorder: "0",
@@ -72,7 +69,7 @@ var fourth_chart_month = {
   data: [
     {
       label: "Nuclear",
-      value: json_obj.main.temp,
+      value: out.main.temp,
       toolText: "Energy: 54.5%"
     },
     {
