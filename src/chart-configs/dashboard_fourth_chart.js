@@ -5,7 +5,7 @@ request(url, function (err, response, body) {
     if(err){
       console.log('error:');
     } else {
-      weather = JSON.parse(body)
+      window.weather = JSON.parse(body)
       console.log(weather);
       
     }
