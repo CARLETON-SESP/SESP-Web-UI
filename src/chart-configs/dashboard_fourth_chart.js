@@ -1,6 +1,11 @@
+function Get('http://ec2-34-230-39-178.compute-1.amazonaws.com:8080/'){
+  var Httpreq = new XMLHttpRequest(); // a new request
+  Httpreq.open("GET",'http://ec2-34-230-39-178.compute-1.amazonaws.com:8080/',false);
+  Httpreq.send(null);
+  return Httpreq.responseText;          
+}
 
-
-
+var json_obj = JSON.parse(Get('http://ec2-34-230-39-178.compute-1.amazonaws.com:8080/'));
 var fourth_chart_month = {
   chart: {
     showBorder: "0",
@@ -66,7 +71,7 @@ var fourth_chart_month = {
   data: [
     {
       label: "Nuclear",
-      value: "6",
+      value: json_obj.main.temp,
       toolText: "Energy: 54.5%"
     },
     {
