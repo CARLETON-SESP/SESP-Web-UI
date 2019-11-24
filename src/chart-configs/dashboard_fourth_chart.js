@@ -1,4 +1,5 @@
 var weather1
+var weather
 let request = require('request');
 let url = `http://ec2-34-230-39-178.compute-1.amazonaws.com:8080/`
 weather1 = request(url, function (err, response, body) {
