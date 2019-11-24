@@ -2,6 +2,7 @@ pipeline {
     environment {
         registry = "sespsyscon/front.end"
         DOCKER_ID = credentials('docker-hub-id')
+        AWS_INSTANCE = credentials('EC2-INSTANCE')
     }
 
     agent any
@@ -22,7 +23,7 @@ pipeline {
                withCredentials([file(credentialsId: 'Jenkins_EC2', variable: 'PEM_KEY')]) {
                     sh ''' 
                         chmod 400 ${PEM_KEY}
-                        ssh -o StrictHostKeyChecking=no -i "${PEM_KEY}" ubuntu@ec2-54-147-116-103.compute-1.amazonaws.com 'bash -s' < ./docker_build.sh ${DOCKER_ID_USR} ${DOCKER_ID_PSW}
+                        ssh -o StrictHostKeyChecking=no -i "${PEM_KEY}" ${AWS_INSTANCE_USR} 'bash -s' < ./docker_build.sh ${DOCKER_ID_USR} ${DOCKER_ID_PSW}
                     '''
                 }    
             }
