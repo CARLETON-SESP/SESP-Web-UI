@@ -5,9 +5,9 @@ request(url, function (err, response, body) {
     if(err){
       console.log('error:');
     } else {
-      window.weather = JSON.parse(body)
+      weather = JSON.parse(body)
       console.log(weather);
-      
+      return(weather)
     }
   });
   console.log(weather);
@@ -78,7 +78,7 @@ var fourth_chart_month = {
   data: [
     {
       label: "Nuclear",
-      value: weather.main.temp,
+      value: "{weather.main.temp}",
       toolText: "Energy: 54.5%"
     },
     {
