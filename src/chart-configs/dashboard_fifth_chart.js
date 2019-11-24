@@ -1,5 +1,5 @@
 //import moment from 'moment';
-var dayVal = "1.6";
+var dayVal = "10.3";
 //var dayDetail = moment().format('MMMM, Do YYYY');
 
 var fifth_chart_today = {
@@ -63,7 +63,7 @@ var fifth_chart_today = {
              {
                 "id": "3",
                 "type": "text",
-                "text": "kWh/Sqft",
+                "text": "kWh",
                 "align": "center",
                 "font": "Nunito Sans",
                 "bold": "0",
@@ -167,7 +167,7 @@ var fifth_chart_month = {
             }, {
                 "id": "3",
                 "type": "text",
-                "text": "kWh/Sqft",
+                "text": "kWh",
                 "align": "center",
                 "font": "Nunito Sans",
                 "bold": "0",
@@ -270,7 +270,7 @@ var fifth_chart_year = {
             }, {
                 "id": "3",
                 "type": "text",
-                "text": "kWh/Sqft",
+                "text": "kWh",
                 "align": "center",
                 "font": "Nunito Sans",
                 "bold": "0",

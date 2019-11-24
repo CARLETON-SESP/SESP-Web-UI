@@ -300,7 +300,7 @@ var sixth_chart_year = {
             "items": [{
                 "id": "1",
                 "type": "text",
-                "text": "Emission",
+                "text": "Diseal Emission",
                 "fontSize": "16",
                 "bold": "1",
                 "color": "#FFFFFF",

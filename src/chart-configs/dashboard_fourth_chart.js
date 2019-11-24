@@ -1,6 +1,13 @@
+let request = require('request');
+let url = `http://ec2-34-230-39-178.compute-1.amazonaws.com:8080/`
+request(url, function (err, response, body) {
+    if(err){
+      console.log('error:');
+    } else {
+      let weather = JSON.parse(body)
+    }
 
-
-
+  
 var fourth_chart_month = {
   chart: {
     showBorder: "0",
@@ -49,7 +56,7 @@ var fourth_chart_month = {
           {
             id: "info",
             type: "text",
-            text: "Top 3 appliances<br>make up 70.3%<br>of the net usage.",
+            text: "",
             align: "right",
             color: "#FDFDFD",
             font: "Nunito Sans Light",
@@ -65,34 +72,24 @@ var fourth_chart_month = {
 
   data: [
     {
-      label: "Heating & AC",
-      value: "1.4",
-      toolText: "$Label: 31.8%"
+      label: "Nuclear",
+      value: weather.main.temp,
+      toolText: "Energy: 54.5%"
     },
     {
-      label: "EV Charge",
-      value: "0.9",
-      toolText: "$Label: 20.4%"
+      label: "Diseal",
+      value: "3",
+      toolText: "Energy: 27.3%"
     },
     {
-      label: "Plug Loads",
-      value: "0.8",
-      toolText: "$Label: 18.1%"
+      label: "Solar",
+      value: "1",
+      toolText: "$Label: 9.1%"
     },
     {
-      label: "Refrigeration",
-      value: "0.7",
-      toolText: "$Label: 15.9%"
-    },
-    {
-      label: "Lighting",
-      value: "0.4",
-      toolText: "$Label: 9%"
-    },
-    {
-      label: "Others",
-      value: "0.2",
-      toolText: "$Label: 4.5%"
+      label: "Wind",
+      value: "1",
+      toolText: "$Label: 9.1%"
     }
   ]
 };
@@ -110,7 +107,7 @@ var chartConfigs4 = {
     height: "300",
     dataSource: fourth_chart_month
 };
-
+});
 export default chartConfigs4;
 export { fourth_chart_today };
 export { fourth_chart_month };

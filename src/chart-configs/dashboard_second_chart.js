@@ -46,26 +46,26 @@ var second_chart_today = {
                 "color": "#B4F9A1",
                 "fontSize": "30",
                 "x": "$canvasEndX + 100",
-                "y": "$canvasheight/2 - 40"
+                "y": "70"
             }, {
                 "id": "indicator",
                 "type": "text",
-                "text": "DECREASE IN COST",
+                "text": "Test",
                 "color": "#FDFDFD",
                 "fontSize": "14",
                 "x": "$canvasEndX + 100",
-                "y": "$canvasheight/2 - 15"
+                "y": "10"
             }]
         }]
     },
 
     "data": [{
         "label": previousDay,
-        "value": "7.3",
-        "alpha": "55"
+        "value": "13",
+        "alpha": "13"
     }, {
         "label": currentDay,
-        "value": "6.2"
+        "value": "13"
     }]
 };
 
@@ -123,7 +123,7 @@ var second_chart_month = {
             }, {
                 "id": "indicator",
                 "type": "text",
-                "text": "INCREASE IN COST",
+                "text": "",
                 "color": "#FDFDFD",
                 "fontSize": "14",
                 "x": "$canvasEndX + 100",
@@ -134,11 +134,11 @@ var second_chart_month = {
 
     "data": [{
         "label": previousMonth,
-        "value": "203",
-        "alpha": "55"
+        "value": "390",
+        "alpha": "390"
     }, {
         "label": currentMonth,
-        "value": "214"
+        "value": "390"
     }]
 };
 var currentYear = moment().format('YYYY');
@@ -207,11 +207,11 @@ var second_chart_year = {
 
     "data": [{
         "label": previousYear,
-        "value": "1600",
-        "alpha": "55"
+        "value": "4680",
+        "alpha": "4680"
     }, {
         "label": currentYear,
-        "value": "1420"
+        "value": "4680"
     }]
 };
 
