@@ -9,7 +9,9 @@ request(url, function (err, response, body) {
       
     }
   });
-  
+  console.log(weather);
+  console.log(weather.main);
+  console.log(weather.main.temp);
 var fourth_chart_month = {
   chart: {
     showBorder: "0",
