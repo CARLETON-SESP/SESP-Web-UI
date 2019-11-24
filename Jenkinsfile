@@ -1,6 +1,5 @@
 pipeline {
     environment {
-        registry = "sespsyscon/front.end"
         DOCKER_ID = credentials('docker-hub-id')
         AWS_INSTANCE = credentials('EC2-INSTANCE')
     }
