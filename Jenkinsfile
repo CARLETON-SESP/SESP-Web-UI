@@ -19,7 +19,7 @@ pipeline {
                 branch "jake_jenkins"
             }
             steps {
-               withCredentials([file(credentialsId: 'Jenkins_EC2', variable: 'PEM_KEY')]) {
+               withCredentials([file(credentialsId: 'josh-vm', variable: 'PEM_KEY')]) {
                     sh ''' 
                         chmod 400 ${PEM_KEY}
                         ssh -o StrictHostKeyChecking=no -i "${PEM_KEY}" ${AWS_INSTANCE_USR} 'bash -s' < ./docker_build.sh ${DOCKER_ID_USR} ${DOCKER_ID_PSW}
