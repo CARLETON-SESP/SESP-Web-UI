@@ -1,9 +1,4 @@
-const url = 'http://ec2-34-230-39-178.compute-1.amazonaws.com:8080/json';
-fetch(url)
-    .then(res => res.json())
-    .then((out) => {
-        console.log('Output: ', out);
-}).catch(err => console.error(err));
+
 var fourth_chart_month = {
   chart: {
     showBorder: "0",
@@ -69,7 +64,7 @@ var fourth_chart_month = {
   data: [
     {
       label: "Nuclear",
-      value: out.main.temp,
+      value: '6',
       toolText: "Energy: 54.5%"
     },
     {
