@@ -107,9 +107,12 @@ var chartConfigs4 = {
     height: "300",
     dataSource: fourth_chart_month
 };
-
+});
 export default chartConfigs4;
 export { fourth_chart_today };
 export { fourth_chart_month };
 export { fourth_chart_year };
+<<<<<<< HEAD
 });
+=======
+>>>>>>> 4d2ca61f180aecd8234aee0cecb288ba422ff355
