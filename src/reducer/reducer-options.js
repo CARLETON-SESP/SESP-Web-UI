@@ -14,6 +14,10 @@ export default function () {
             name: "Appliances"
         },
         {
+            id: 4,
+            name: "Usage-by-rooms"
+        },
+        {
             id: 5,
             name: "Emissions"
         }
