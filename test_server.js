@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = 8080
+const port = 3031
 let request = require('request');
 let apiKey = '14029a424aec0b463967f1efd7768019';
 let city = 'Iqaluit';
