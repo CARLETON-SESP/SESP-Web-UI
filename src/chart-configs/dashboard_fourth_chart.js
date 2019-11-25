@@ -13,8 +13,8 @@ let url = `http://ec2-34-230-39-178.compute-1.amazonaws.com:8080/`
   });
   
   console.log(promise1);
-  console.log(promise1.PromiseValue.main);
-  console.log(promise1.PromiseValue.main.temp);
+  console.log(promise1.PromiseValue);
+  console.log(promise1.object);
 var fourth_chart_month = {
   chart: {
     showBorder: "0",
