@@ -2,7 +2,7 @@ import React from 'react';
 import './Home.css';
 import 'tachyons';
 
-import Nav from '../Nav/Nav';
+import Nav from '../../Nav/Nav';
 import locked from './locked.png'
 import unlocked from './unlocked.png'
 
