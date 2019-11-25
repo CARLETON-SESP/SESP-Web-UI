@@ -1,7 +1,10 @@
 /*var weather
 let request = require('request');
 let url = `http://ec2-34-230-39-178.compute-1.amazonaws.com:8080/`
- var promise1 = new Promise (function(resolve, reject){request(url, function test(err, response, body) {
+var promise1
+var weather1 = promise1
+
+ promise1 = new Promise (function(resolve, reject){request(url, function test(err, response, body) {
     if(err){
       console.log('error:');
     } else {
@@ -14,9 +17,9 @@ let url = `http://ec2-34-230-39-178.compute-1.amazonaws.com:8080/`
   });
   
   console.log(promise1);
- var weather1 = promise1;
   console.log(weather1);
-  console.log(weather1.main.temp);*/
+  console.log(weather1.then())
+  console.log(weather1.then().main.temp);*/
 var fourth_chart_month = {
   chart: {
     showBorder: "0",

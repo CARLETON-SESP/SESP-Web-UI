@@ -119,7 +119,7 @@ var second_chart_month = {
                 "color": "#E8506B",
                 "fontSize": "30",
                 "x": "$canvasEndX + 100",
-                "y": "$canvasheight/2 - 40"
+                "y": "70"
             }, {
                 "id": "indicator",
                 "type": "text",
@@ -127,7 +127,7 @@ var second_chart_month = {
                 "color": "#FDFDFD",
                 "fontSize": "14",
                 "x": "$canvasEndX + 100",
-                "y": "$canvasheight/2 - 15"
+                "y": "10"
             }]
         }]
     },
@@ -192,7 +192,7 @@ var second_chart_year = {
                 "color": "#B4F9A1",
                 "fontSize": "30",
                 "x": "$canvasEndX + 100",
-                "y": "$canvasheight/2 - 40"
+                "y": "70"
             }, {
                 "id": "indicator",
                 "type": "text",
@@ -200,7 +200,7 @@ var second_chart_year = {
                 "color": "#FDFDFD",
                 "fontSize": "14",
                 "x": "$canvasEndX + 100",
-                "y": "$canvasheight/2 - 15"
+                "y": "10"
             }]
         }]
     },
