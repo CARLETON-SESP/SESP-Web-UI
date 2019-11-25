@@ -2,7 +2,7 @@ import React from 'react';
 import OptionList from '../containers/optionlist';
 import ChartDetail from '../containers/chart';
 import './app.css';
-import logo from 'IMG_0168.png'
+import logo from '../components/IMG_0168.png'
 class App extends React.Component {
 
     componentDidMount() {
