@@ -8,12 +8,13 @@ let url = `http://ec2-34-230-39-178.compute-1.amazonaws.com:8080/`
       weather = JSON.parse(body)
       console.log(weather);
       resolve(weather);
+      return(weather);
     }
    });
   });
   
   console.log(promise1);
- var weather1 = await promise1;
+ var weather1 = promise1;
   console.log(weather1);
   console.log(weather1.main.temp);
 var fourth_chart_month = {
