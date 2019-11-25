@@ -15,7 +15,7 @@ export default function () {
         },
         {
             id: 4,
-            name: "Place Holder"
+            name: "Weather Data"
         },
         {
             id: 5,

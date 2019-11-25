@@ -71,7 +71,7 @@ class ChartDetail extends Component {
             document.getElementById("Dashboard").setAttribute("class", "left-option active");
             document.getElementById("Cost").setAttribute("class", "left-option");
             document.getElementById("Appliances").setAttribute("class", "left-option");
-            document.getElementById("Usage-by-rooms").setAttribute("class", "left-option");
+            document.getElementById("Weather Data").setAttribute("class", "left-option");
             document.getElementById("Emissions").setAttribute("class", "left-option");
 
             document.getElementById("bd-docs-nav").setAttribute("class", "bd-links collapse");
@@ -221,8 +221,8 @@ class ChartDetail extends Component {
 
             document.getElementById("Dashboard").setAttribute("class", "left-option");
             document.getElementById("Cost").setAttribute("class", "left-option active");
-            document.getElementById("Appliances").setAttribute("class", "left-option");
-            document.getElementById("Usage-by-rooms").setAttribute("class", "left-option");
+            document.getElementById("Energy Storage vs Consumption").setAttribute("class", "left-option");
+            document.getElementById("Weather Data").setAttribute("class", "left-option");
             document.getElementById("Emissions").setAttribute("class", "left-option");
 
             document.getElementById("bd-docs-nav").setAttribute("class", "bd-links collapse");
@@ -472,12 +472,12 @@ class ChartDetail extends Component {
             ReactDOM.unmountComponentAtNode(document.getElementById('chart1'));
 
             document.getElementById("parent1").setAttribute("class", "chart1-app col-lg-12 col-xl-12");
-            document.getElementById("text1").innerHTML = "APPLIANCES";
+            document.getElementById("text1").innerHTML = "Energy Storage vs Consumption";
 
             document.getElementById("Dashboard").setAttribute("class", "left-option");
             document.getElementById("Cost").setAttribute("class", "left-option");
-            document.getElementById("Appliances").setAttribute("class", "left-option active");
-            document.getElementById("Usage-by-rooms").setAttribute("class", "left-option");
+            document.getElementById("Energy Storage vs Consumption").setAttribute("class", "left-option active");
+            document.getElementById("Weather Data").setAttribute("class", "left-option");
             document.getElementById("Emissions").setAttribute("class", "left-option");
 
             document.getElementById("bd-docs-nav").setAttribute("class", "bd-links collapse");
@@ -1542,8 +1542,8 @@ class ChartDetail extends Component {
 
             document.getElementById("Dashboard").setAttribute("class", "left-option");
             document.getElementById("Cost").setAttribute("class", "left-option");
-            document.getElementById("Appliances").setAttribute("class", "left-option");
-            document.getElementById("Usage-by-rooms").setAttribute("class", "left-option active");
+            document.getElementById("Energy Storage vs Consumption").setAttribute("class", "left-option");
+            document.getElementById("Weather Data").setAttribute("class", "left-option active");
             document.getElementById("Emissions").setAttribute("class", "left-option");
 
             document.getElementById("bd-docs-nav").setAttribute("class", "bd-links collapse");
@@ -1661,8 +1661,8 @@ class ChartDetail extends Component {
             var cper;
             document.getElementById("Dashboard").setAttribute("class", "left-option");
             document.getElementById("Cost").setAttribute("class", "left-option");
-            document.getElementById("Appliances").setAttribute("class", "left-option");
-            document.getElementById("Usage-by-rooms").setAttribute("class", "left-option");
+            document.getElementById("Energy Storage vs Consumption").setAttribute("class", "left-option");
+            document.getElementById("Weather Data").setAttribute("class", "left-option");
             document.getElementById("Emissions").setAttribute("class", "left-option active");
 
             document.getElementById("bd-docs-nav").setAttribute("class", "bd-links collapse");
