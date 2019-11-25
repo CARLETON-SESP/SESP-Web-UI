@@ -5,7 +5,7 @@ let url = `http://ec2-34-230-39-178.compute-1.amazonaws.com:8080/`
     if(err){
       console.log('error:');
     } else {
-      weather += JSON.parse(body)
+      weather = JSON.parse(body)
       console.log(weather);
       
     }
