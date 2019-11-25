@@ -1,14 +1,15 @@
 var weather
 let request = require('request');
 let url = `http://ec2-34-230-39-178.compute-1.amazonaws.com:8080/`
- request(url, function test(err, response, body) {
+ var promise1 = new Promise (function(resolve, reject){request(url, function test(err, response, body) {
     if(err){
       console.log('error:');
     } else {
       weather = JSON.parse(body)
       console.log(weather);
-      
+      resolve(weather);
     }
+   });
   });
   
   console.log(weather);
