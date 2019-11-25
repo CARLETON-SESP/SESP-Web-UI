@@ -63,7 +63,7 @@ class App extends React.Component {
                         <div id="nav" className="col-12 col-md-3 col-xl-2 bd-sidebar">
                             <div className="row">
                                 <div className="col-md-12 col-8">
-                                    <div className="text-sm-left text-md-center logo">SESP<span id="beta"> <span className="logo"><img src={logo} alt="" /></span></span></div>
+                                    <div className="text-sm-left text-md-center logo">SESP 2019<span id="beta"> <span className="logo"><img src={logo} alt="" /></span></span></div>
                                 </div>
                                 <div className="col-md-12 col-4 text-right">
                                     {/* <!-- for menu when screen width is less--> */}
