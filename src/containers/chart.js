@@ -70,7 +70,7 @@ class ChartDetail extends Component {
 
             document.getElementById("Dashboard").setAttribute("class", "left-option active");
             document.getElementById("Cost").setAttribute("class", "left-option");
-            document.getElementById("Appliances").setAttribute("class", "left-option");
+            document.getElementById("Energy Storage vs Consumption").setAttribute("class", "left-option");
             document.getElementById("Weather Data").setAttribute("class", "left-option");
             document.getElementById("Emissions").setAttribute("class", "left-option");
 
