@@ -11,11 +11,11 @@ export default function () {
         },
         {
             id: 3,
-            name: "Appliances"
+            name: "Energy Storage vs Consumption"
         },
         {
             id: 4,
-            name: "Usage-by-rooms"
+            name: "Place Holder"
         },
         {
             id: 5,
