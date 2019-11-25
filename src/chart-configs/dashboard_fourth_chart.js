@@ -82,7 +82,7 @@ var fourth_chart_month = {
   data: [
     {
       label: "Nuclear",
-      value: weather1.main.temp,
+      value: "6",
       toolText: "Energy: 54.5%"
     },
     {
