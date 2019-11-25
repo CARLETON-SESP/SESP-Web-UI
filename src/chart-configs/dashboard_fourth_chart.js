@@ -1,13 +1,22 @@
+/*var weather
 let request = require('request');
 let url = `http://ec2-34-230-39-178.compute-1.amazonaws.com:8080/`
-request(url, function (err, response, body) {
+ var promise1 = new Promise (function(resolve, reject){request(url, function test(err, response, body) {
     if(err){
       console.log('error:');
     } else {
-      let weather = JSON.parse(body)
+      weather = JSON.parse(body)
+      console.log(weather);
+      resolve(weather);
+      return(weather);
     }
-
+   });
+  });
   
+  console.log(promise1);
+ var weather1 = promise1;
+  console.log(weather1);
+  console.log(weather1.main.temp);*/
 var fourth_chart_month = {
   chart: {
     showBorder: "0",
@@ -73,7 +82,7 @@ var fourth_chart_month = {
   data: [
     {
       label: "Nuclear",
-      value: weather.main.temp,
+      value: "6",
       toolText: "Energy: 54.5%"
     },
     {
@@ -107,8 +116,9 @@ var chartConfigs4 = {
     height: "300",
     dataSource: fourth_chart_month
 };
-});
+
 export default chartConfigs4;
 export { fourth_chart_today };
 export { fourth_chart_month };
 export { fourth_chart_year };
+
