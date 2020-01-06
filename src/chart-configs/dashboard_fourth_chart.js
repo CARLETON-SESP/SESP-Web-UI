@@ -1,3 +1,4 @@
+import React from 'react'
 var weather
 let request = require('request');
 let url = `http://ec2-34-230-39-178.compute-1.amazonaws.com:8080/`
@@ -15,11 +16,17 @@ var weather1 = promise1
     }
    });
   });
+  var counter =0;
+  var value = 1; //the number to add.  You can change it by modifying the variable
+  setInterval(function() {
+    counter+= value;
+  },1000);
   
-  console.log(promise1);
+ /* console.log(promise1);
   console.log(weather1);
   console.log(weather1.then())
-  console.log(weather1.then().main.temp);
+  console.log(weather1.then().main.temp)*/
+
 var fourth_chart_month = {
   chart: {
     showBorder: "0",
@@ -100,7 +107,7 @@ var fourth_chart_month = {
     },
     {
       label: "Wind",
-      value: "1",
+      value: counter,
       toolText: "$Label: 9.1%"
     }
   ]
