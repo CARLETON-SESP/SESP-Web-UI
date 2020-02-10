@@ -47,7 +47,48 @@ class ChartDetail extends Component {
         setTimeout(function () {
             document.getElementById("month").click();
         }, 300);
+        const fetch = require('node-fetch');
 
+        var counter = 0
+
+        function getData(){
+            console.log("count: " + counter)
+            if (counter >= 2 && counter <=5)
+            fetch('http://localhost:8081/')
+            .then((response) => {
+                return response.json();
+            })
+            .then((myJson) => {
+                //get object ready with data
+                var weatherObject = JSON.parse(myJson.json);
+
+                //test examples of references to object
+                console.log(weatherObject);
+                
+                //CALLING CGI TO WRITE NEW FILE
+                fetch('http://localhost:8082/cgi-bin/test-cgi?'+weatherObject.wind.gust)
+                .then((res) => {
+                    return res.json();
+                })
+                .then((cgiJson) => {
+                    var cgiObj = JSON.parse(cgiJson.json);
+                    console.log(cgiObj);
+                });
+                
+            });
+
+
+            // UNCOMMENT FOR PROD
+            // if (counter <= 5){
+            // setTimeout(getData, 5000);  
+            // }else{
+            //     // window.location.reload(false);
+            // }
+            // counter = counter+1
+            
+        }
+
+        getData();
     }
 
     componentDidUpdate() {

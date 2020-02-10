@@ -1,4 +1,44 @@
+const fetch = require('node-fetch');
 
+var counter = 0
+
+function getData(){
+    fetch('http://localhost:8081/')
+    .then((response) => {
+        return response.json();
+    })
+    .then((myJson) => {
+        //get object ready with data
+        var weatherObject = JSON.parse(myJson.json);
+
+        //test examples of references to object/////////////////////
+
+        console.log(weatherObject);
+        // console.log(weatherObject.weather[0].id);
+        // console.log(weatherObject.main.temp);
+        // console.log(weatherObject.wind.gust);
+        
+        // SHELL STUFF////////////////////
+
+        // var shellVal = "sh test.sh " + weatherObject.main.temp
+        // const exec = require('child_process').exec;
+        // const myShellScript = exec(shellVal);
+        // myShellScript.stdout.on('data', (data)=>{
+        //     console.log(data); 
+        //     // do whatever you want here with data
+        // });
+        // myShellScript.stderr.on('data', (data)=>{
+        //     console.error(data);
+        // });
+        // counter = counter+1
+        // console.log("count: " + counter)
+
+        // FILE WRITE ////////////////
+        const fs = require('fs') 
+  
+        // Data which will write in a file. 
+        let data = 
+        `
 var fourth_chart_month = {
     chart: {
         showBorder: "0",
@@ -69,7 +109,7 @@ var fourth_chart_month = {
         },
         {
         label: "Diseal",
-        value: "9.3",
+        value: `+`"`+weatherObject.wind.gust+`"`+`,
         toolText: "Energy: 27.3%"
         },
         {
@@ -103,4 +143,28 @@ var fourth_chart_month = {
     export { fourth_chart_today };
     export { fourth_chart_month };
     export { fourth_chart_year };
+        `
+        
+        // Write data in 'Output.txt' . 
+        fs.writeFile('../chart-configs/testComp.js', data, (err) => { 
+            
+            // In case of a error throw err. 
+            if (err) throw err; 
+        }) 
+
+
+    });
+
+    // if (counter <= 3){
+    //   setTimeout(getData, 5000);  
+    // }
+    
+}
+
+getData();
+ 
+ 
+
+
+
 
